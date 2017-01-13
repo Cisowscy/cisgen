@@ -30,6 +30,7 @@ na wstępie powinno się podać rootowi, nazwę, e-mail, hasło, i telefon; doda
 
 #### 1.3.3 ustawienia prywatności i zezwoleń
 Niemalże każdy kto kiedykolwiek kożystał z internetowych mechanizmó do budowy drzewa np. MyHeritage, pluł sobie w brodę, rozważając 4 opcje
+
 - prywatne drzewo z możliwością edycji przez każdego z użytkownika **(minusy: nikt bez zalogowania nic nie widzi; inny użytkownik może niechcący usunąc istotne informacje, lub dodać już istniejące po raz kolejny)**
 - prywatne drzewo z możliwością edycji przez administratora **(minusy: nikt bez zalogowania nic nie widzi; mniejsze zainteresowanie drzewem z powodu braku możliwości wpływania na treść)**
 - publiczne drzewo z możliwością edycji przez każdego z użytkownika **(minusy: każdy może zobaczyć wszytkie zdjęcia i informacje o wszystkich osobach zmarłych; inny użytkownik może niechcący usunąc istotne informacje, lub dodać już istniejące po raz kolejny)**
@@ -108,8 +109,8 @@ polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o loso
  - jeśli np. chcemy dodać pliki online nie znajdujące się w folderze np zbiór kolejnych plików od **`http://agadd2.home.net.pl/metrykalia/
 301/sygn.%201108/images/PL_1_301_1108_0001.jpg`** do **`http://agadd2.home.net.pl/metrykalia/
 301/sygn.%201108/images/PL_1_301_1108_0259.jpg`** można podać regułę URL , np.:
-> 
-> ```JavaScript 
+
+>  ```JavaScript 
 > const a = 'http://agadd2.home.net.pl/metrykalia/
 301/sygn.%201108/images/PL_1_301_1108_';
 > const c = '.jpg';
@@ -118,7 +119,7 @@ polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o loso
 >  
 >   
 > ```
-> 
+
 
 
 ##### 1.4.2.2 Dołączanie wybranych elementów z tymczasowej tablicy do odpowiednich podfolderów repozytorium.
