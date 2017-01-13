@@ -111,7 +111,6 @@ polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o loso
  - jeśli np. chcemy dodać pliki online nie znajdujące się w folderze np zbiór kolejnych plików od `http://agadd2.home.net.pl/metrykalia/
 301/sygn.%201108/images/PL_1_301_1108_0001.jpg` do `http://agadd2.home.net.pl/metrykalia/
 301/sygn.%201108/images/PL_1_301_1108_0259.jpg` można podać regułę URL , np.:
-
 > ```JSON
 > const a = 'http://agadd2.home.net.pl/metrykalia/
 301/sygn.%201108/images/PL_1_301_1108_';
