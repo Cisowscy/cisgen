@@ -1,45 +1,27 @@
 (opis projektu)
 
-# Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria
+**Konspekt Treści: **
+
+[TOC]
+
+## Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria
 ![Tekst alt](ustawienia_serwer-projekt-repozytorium.png "CISGEN: Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria")
 
-**`Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria:`** znajdują się na 1 pozycji menu
+### Lokalizacje serwerów danych
+Serwer Danych - jest to miejsce przechowywania bazy danych, docelowo baza powinna się mieścić w chmurze aby zapewnić dostęp każdemu uprawnionemu z dowolnego miejsca, dodatkowo można też posiadać lokalną kopię, na dysku, w 1 bazie danych może znajdować się wiele projektów.
+
+### Lista Projektów
+Lista Projektów - Wyświetla listę projektów znajdujących się w podanych lokalizacjach, klawisz `+` pozwala utworzyć nowy projekt, należy w oknie hosta wybrać dostępną bazę (z zbioru wskazanych serwerów) oraz podać jej nazwę i opis, nazwę i opis można później edytować w panelu Użytkownicy i Prywatność.
+
+### (Eksport/Import/Transfer Baz Danych i Projektu)
+Chcą zapewnić najwyższą kopatybiność i dostępność taki import i eksport będzie w przyszłości opracowany.
 
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Cisowscy/cisgen/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Użytkownicy i Prywatność
+Użytkownicy i Prywatność -  w tej sekcji możemy ustawić szczegóły projektu, takie jak: logo; wielojęzyczną nazwę, wielojęzyczny opis, oraz dodać użytkowników projektu i przyznać im dostęp do treści i ustawień.
+**Nazwa** i **Opis** posiada strukturę zbliżoną do JSON, aby zapewnić możliwość wielojęzyczności 
+```JSON
+{ "pl": { "nazwa": "Twoja_Nazwa", "opis": "Twój_Opis" }, "en": { "nazwa": "Your_Name", "opis": "Your_Description" } }
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Cisowscy/cisgen/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Repozytoria Plików
