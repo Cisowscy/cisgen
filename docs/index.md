@@ -107,16 +107,16 @@ polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o loso
  - lub adres konkretnego pliku np. `http://agadd2.home.net.pl/metrykalia/301/sygn.%201108/images/PL_1_301_1108_0259.jpg` 
 
  - podając lokalizacje folderu można dodatkowo ustawić filty np.: `typ:jpg` lub `rozmiar x < : 500 kb`, 
- - jeśli np. chcemy dodać pliki online nie znajdujące się w folderze np zbiór kolejnych plików od `http://agadd2.home.net.pl/metrykalia/301/sygn.%201108/images/PL_1_301_1108_0001.jpg` do `http://agadd2.home.net.pl/metrykalia/301/sygn.%201108/images/PL_1_301_1108_0259.jpg` można podać regułę URL , np.:
+ - jeśli np. chcemy dodać pliki online nie znajdujące się w folderze np zbiór kolejnych plików od `http://agadd.home.net.pl/metrykalia/301/sygn.%201782/images/PL_1_301_1782_0001.jpg` do `http://agadd.home.net.pl/metrykalia/301/sygn.%201782/images/PL_1_301_1782_0025.jpg` można podać regułę URL , np.:
 
 > ``` javascript
 > const html_img_a = '<img src="';
 > const html_img_z = '" width="100%">'
 > 
-> const a = "http://agadd.home.net.pl/metrykalia/301/sygn.%201782/images/PL_1_301_1782_";
+> const a = "http://agadd.home.net.pl/metrykalia/301/sygn.%20126/images/PL_1_301_126_";
 > const c = ".jpg";
 > var url_start = Number(0);
-> var url_stop = Number(25);
+> var url_stop = Number(161);
 > var arr = new Array();
 > 
 > document.write(html_img_a + a + "0000-metryczka" + c + html_img_z + "<br>");
