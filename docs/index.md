@@ -1,6 +1,5 @@
 (opis projektu)
 
-[TOC]
 
 ## Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria
 ![Tekst alt](ustawienia_serwer-projekt-repozytorium.png "CISGEN: Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria")
@@ -15,10 +14,12 @@ Lista Projektów - Wyświetla listę projektów znajdujących się w podanych lo
 ### Użytkownicy i Prywatność
 Użytkownicy i Prywatność -  w tej sekcji możemy ustawić szczegóły projektu, takie jak: logo; wielojęzyczną nazwę, wielojęzyczny opis, oraz dodać użytkowników projektu i przyznać im dostęp do treści i ustawień. Wskazanym jest dodadnie logo projektu.
 #### Nazwa i Opis(edycja)
+
 ```JSON
 { "pl": { "nazwa": "Twoja_Nazwa", "opis": "Twój_Opis" }, 
   "en": { "nazwa": "Your_Name", "opis": "Your_Description" } }
 ```
+
 #### Użytkownicy
 Każdy nowo utworzony projekt posiada 2 sztywno utworzonych urzytkowników:
 - rola: **root**; zezwolenia: **#całość**;
@@ -50,7 +51,9 @@ Dodatkowo każdy z użytkowniów oprócz Roota i Gościa, może zawierać dowoln
 ### Repozytoria Plików
 Treść choćby była najlepiej opracowana i zredagowana, zawsze pozostanie suchą treścią, chcąc ją ubogacić niezbędne są skany źródłowych dokumentów historycznych, grafiki, zdjęcia, etc., wszystkie te elementy zajmują dużo miejsca, z drugiej jednak strony warto posiadać kopię (bezpieczeństwa), rozmaitych dokumentów. Stąd mój model plików zewnetrznych - model plików zewnęrznych (repozytoriów):
 
-> - **Utworzenie Repozytorium** polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o losowym niepowtarzalnym ID a w nim pliku **`CISGEN-REPOZYTORIUM.JSON`** po utworzeniu pustego pliku możemy edytować jego szczegóły, aby repozytorium prawidłowo było kategoryzowane w spisie repozytoriów; Oto Przykład:
+#### **Utworzenie Repozytorium** 
+polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o losowym niepowtarzalnym ID a w nim pliku **`CISGEN-REPOZYTORIUM.JSON`** po utworzeniu pustego pliku możemy edytować jego szczegóły, aby repozytorium prawidłowo było kategoryzowane w spisie repozytoriów; Oto Przykład:
+
 > ```JSON
 > {
 >     "repozytorium": {
@@ -88,7 +91,10 @@ Treść choćby była najlepiej opracowana i zredagowana, zawsze pozostanie such
 >     "elementy": [{ }]
 > }
 ```
-> 
-> - **Dodawanie elementów do Repozytorium** ...i tu sprawa jest troszkę, pozornie, bardziej skąplikowana, ale to tylko dlatego by docelowo usprawnić dodawanie tylko i wyłącznie chcianych elementów, ktoś powie przecież możesz zaznaczyć te które chcesz dodać.. tak 5, 10, 15, tak, ale nie jak dodajemy 1000 elementów z zbioru posiadającego 5000 pozycji :/ 
+
+
+#### **Dodawanie elementów do Repozytorium** 
+...i tu sprawa się troszkę, pozornie komplikuje, ale to tylko dlatego by docelowo usprawnić dodawanie tylko i wyłącznie chcianych elementów, ktoś powie przecież możesz zaznaczyć te które chcesz dodać.. tak 5, 10, 15, tak, ale nie jak dodajemy 1000 elementów z zbioru posiadającego 5000 pozycji :/ 
+
 >  - W pierwszej kolejności należy zbudować lokalną tymczasową tablicę z wszystkich elementów jakie chcemy dodać do repozytorium 
 > 
