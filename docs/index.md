@@ -48,4 +48,47 @@ Dodatkowo każdy z użytkowniów oprócz Roota i Gościa, może zawierać dowoln
 
 
 ### Repozytoria Plików
-Treść choćby była najlepiej opracowana i zredagowana, zawsze pozostanie suchą treścią, chcąc ją ubogacić niezbędne są skany dokumentów historycznych źródłowych, grafiki, zdjęcia, etc., wszystkie te elementy zajmują dużo miejsca
+Treść choćby była najlepiej opracowana i zredagowana, zawsze pozostanie suchą treścią, chcąc ją ubogacić niezbędne są skany źródłowych dokumentów historycznych, grafiki, zdjęcia, etc., wszystkie te elementy zajmują dużo miejsca, z drugiej jednak strony warto posiadać kopię (bezpieczeństwa), rozmaitych dokumentów. Stąd mój model plików zewnetrznych - model plików zewnęrznych (repozytoriów):
+
+> - **Utworzenie Repozytorium** polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o losowym niepowtarzalnym ID a w nim pliku **`CISGEN-REPOZYTORIUM.JSON`** po utworzeniu pustego pliku możemy edytować jego szczegóły, aby repozytorium prawidłowo było kategoryzowane w spisie repozytoriów; Oto Przykład:
+> ```JSON
+> {
+>     "repozytorium": {
+>         "id": 002345013042,
+>         "prawa": "CC-BY-SA-ND",
+>         "nazwa": [{
+>             "jezk": "pl",
+>             "nazwa": "Twoja Nazwa"
+>         }, {
+>             "jezk": "en",
+>             "nazwa": "Your Name"
+>         }],
+>         "tagi": [{
+>             "id": 03456730243,
+>         }, {
+>             "nazwa": [{
+>                 "jezk": "pl",
+>                 "nazwa": "nazwa grupy 1"
+>             }, {
+>                 "jezk": "en",
+>                 "nazwa": "name group 1"
+>             }]
+>         }, {
+>             "id": 03454730243,
+>         }, {
+>             "nazwa": [{
+>                 "jezk": "pl",
+>                 "nazwa": "nazwa grupy 2"
+>             }, {
+>                 "jezk": "en",
+>                 "nazwa": "name group 2"
+>             }]
+>         }]
+>     },
+>     "elementy": [{ }]
+> }
+```
+> 
+> - **Dodawanie elementów do Repozytorium** ...i tu sprawa jest troszkę, pozornie, bardziej skąplikowana, ale to tylko dlatego by docelowo usprawnić dodawanie tylko i wyłącznie chcianych elementów, ktoś powie przecież możesz zaznaczyć te które chcesz dodać.. tak 5, 10, 15, tak, ale nie jak dodajemy 1000 elementów z zbioru posiadającego 5000 pozycji :/ 
+>  - W pierwszej kolejności należy zbudować lokalną tymczasową tablicę z wszystkich elementów jakie chcemy dodać do repozytorium 
+> 
