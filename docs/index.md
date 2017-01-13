@@ -112,7 +112,7 @@ polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o loso
 301/sygn.%201108/images/PL_1_301_1108_0001.jpg` do `http://agadd2.home.net.pl/metrykalia/
 301/sygn.%201108/images/PL_1_301_1108_0259.jpg` można podać regułę URL , np.:
 
-> ```JavaScript 
+> ```JSON
 > const a = 'http://agadd2.home.net.pl/metrykalia/
 301/sygn.%201108/images/PL_1_301_1108_';
 > const c = '.jpg';
