@@ -116,9 +116,7 @@ polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o loso
  const a = 'http://agadd2.home.net.pl/metrykalia/
 301/sygn.%201108/images/PL_1_301_1108_';
  const c = '.jpg';
-  
-   
-  
+
    
 ```
 
