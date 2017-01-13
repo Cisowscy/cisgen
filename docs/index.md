@@ -34,7 +34,7 @@ Niemalże każdy kto kiedykolwiek kożystał z internetowych mechanizmó do budo
 
 Żadna z powyższych opcji mi nie odpowiada, prponuję zupełnie inny model:
 
-##### **Role:**
+##### Role:
 - **root** z dostępem do ustawień projektu: dodawania użytkowników, i innych ustawień
 - **administrtor** dostęp do ustawień zezwoleń, i edycji treści
 - **redaktor** osoba z dostępem do edycji treści; oraz mająca dostęp do wybranych nie publicznych treści.
@@ -43,7 +43,9 @@ Niemalże każdy kto kiedykolwiek kożystał z internetowych mechanizmó do budo
 - **gość** osoba nie zalogowana z dostępem tylko do jawnych treści.
 na wstępie powinno się podać rootowi, nazwę, e-mail, hasło, i telefon; dodatkowa można także (niezalecane) wyłączyć gościa; koperta w polu akcji, wysyła na podanego email-a, dane logowania do projektu, istnieje także możliwość dodania dodatkowych użytkowników.
 
+##### Zezwolenia:
 Dodatkowo każdy z użytkowniów oprócz Roota i Gościa, może zawierać dowolną ilość tagów zezwoleń (atoryzacji) dodtępu do wybranych treści, dzięki temu mogę szczegółuwo kontrolować kto do jakich części ma dostęp, tagi prywatności, można dodawać bezpośrednio z poziomu edycji treści, lub z poziomu ustawień, tworząc nowy tag, i przypisywując do niego (za pomocą przeciągnięcia elementy) oraz określając funkcje **zezwól dostęp do** lub **zabroń dostępu do**.
 
 
 ### Repozytoria Plików
+Treść choćby była najlepiej opracowana i zredagowana, zawsze pozostanie suchą treścią, chcąc ją ubogacić niezbędne są skany dokumentów historycznych źródłowych, grafiki, zdjęcia, etc., wszystkie te elementy zajmują dużo miejsca
