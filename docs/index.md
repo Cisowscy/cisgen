@@ -104,21 +104,49 @@ polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o loso
  W pierwszej kolejności należy określić jakie elemnty i skąd mają być pobierane. Można podać np.
  
  - lokalny adres folderu np. `C:\User\Obrazy\Folder1\`
- - lub adres konkretnego pliku np. `http://agadd2.home.net.pl/metrykalia/
-301/sygn.%201108/images/PL_1_301_1108_0259.jpg` 
+ - lub adres konkretnego pliku np. `http://agadd2.home.net.pl/metrykalia/301/sygn.%201108/images/PL_1_301_1108_0259.jpg` 
 
  - podając lokalizacje folderu można dodatkowo ustawić filty np.: `typ:jpg` lub `rozmiar x < : 500 kb`, 
- - jeśli np. chcemy dodać pliki online nie znajdujące się w folderze np zbiór kolejnych plików od `http://agadd2.home.net.pl/metrykalia/
-301/sygn.%201108/images/PL_1_301_1108_0001.jpg` do `http://agadd2.home.net.pl/metrykalia/
-301/sygn.%201108/images/PL_1_301_1108_0259.jpg` można podać regułę URL , np.:
+ - jeśli np. chcemy dodać pliki online nie znajdujące się w folderze np zbiór kolejnych plików od `http://agadd2.home.net.pl/metrykalia/301/sygn.%201108/images/PL_1_301_1108_0001.jpg` do `http://agadd2.home.net.pl/metrykalia/301/sygn.%201108/images/PL_1_301_1108_0259.jpg` można podać regułę URL , np.:
 
-``` javascript
- const a = 'http://agadd2.home.net.pl/metrykalia/
-301/sygn.%201108/images/PL_1_301_1108_';
- const c = '.jpg';
-
-   
-```
+> ``` javascript
+> const html_img_a = '<img src="';
+> const html_img_z = '" width="100%">'
+> 
+> const a = "http://agadd.home.net.pl/metrykalia/301/sygn.%201782/images/PL_1_301_1782_";
+> const c = ".jpg";
+> var url_start = Number(0);
+> var url_stop = Number(25);
+> var arr = new Array();
+> 
+> document.write(html_img_a + a + "0000-metryczka" + c + html_img_z + "<br>");
+> document.write(html_img_a + a + "0000-tablica%20poczatkowa" + c + html_img_z + "<br>");
+> 
+> while (url_start < url_stop + 2) {
+>     arr.push(url_start++);
+> }
+> for (var v in arr) {
+>     function zera(v) {
+>         var i = 0;
+>         do {
+>             v = Math.floor(v / 10);
+>             i++;
+>         } while (v > 0);
+>         return i;
+>     }
+>     if (zera(v) < 2) {
+>         document.write(html_img_a + a + "000" + v + c + html_img_z + "<br>");
+>     } else if (zera(v) < 3) {
+>         document.write(html_img_a + a + "00" + v + c + html_img_z + "<br>");
+>     } else if (zera(v) < 4) {
+>         document.write(html_img_a + a + "0" + v + c + html_img_z + "<br>");
+>     } else {
+>         document.write(html_img_a + a + v + c + html_img_z + "<br>");
+>     }
+> }
+> 
+> document.write(html_img_a + a + "9999-tablica%20koncowa" + c + html_img_z + "<br>");
+> ```
 
 
 
