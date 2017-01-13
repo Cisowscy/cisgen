@@ -1,5 +1,6 @@
 (opis projektu)
 
+# (wstępna) IDEA projektu CISGEN : Layout i Działanie
 
 ## 1.0 Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria
 ![Tekst alt](ustawienia_serwer-projekt-repozytorium.png "CISGEN: Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria")
@@ -98,7 +99,27 @@ polega na utworzeniu wewnątrz bazy dnych w katalogu repozytoiów folderu o loso
 ...i tu sprawa się troszkę, pozornie komplikuje, ale to tylko dlatego by docelowo usprawnić dodawanie tylko i wyłącznie chcianych elementów, ktoś powie przecież możesz zaznaczyć te które chcesz dodać.. tak 5, 10, 15, tak, ale nie jak dodajemy 1000 elementów z zbioru posiadającego 5000 pozycji :/ 
 
 ##### 1.4.2.1 Utworzenie tymczasowej tablicy elementów z sprepraowanych lokalizacji źródłowych.
-(opis)
+
+ W pierwszej kolejności należy określić jakie elemnty i skąd mają być pobierane. Można podać np. 
+ - lokalny adres folderu np. **`C:\User\Obrazy\Folder1\`** 
+ - lub adres konkretnego pliku np. **`http://agadd2.home.net.pl/metrykalia/
+301/sygn.%201108/images/PL_1_301_1108_0259.jpg`**,
+ - podając lokalizacje folderu można dodatkowo ustawić filty np.: **`typ:jpg`** lub **`rozmiar x < : 500 kb`**, 
+ - jeśli np. chcemy dodać pliki online nie znajdujące się w folderze np zbiór kolejnych plików od **`http://agadd2.home.net.pl/metrykalia/
+301/sygn.%201108/images/PL_1_301_1108_0001.jpg`** do **`http://agadd2.home.net.pl/metrykalia/
+301/sygn.%201108/images/PL_1_301_1108_0259.jpg`** można podać regułę URL , np.:
+> 
+> ```JavaScript 
+> const a = 'http://agadd2.home.net.pl/metrykalia/
+301/sygn.%201108/images/PL_1_301_1108_';
+> const c = '.jpg';
+>  
+>   
+>  
+>   
+> ```
+> 
+
 
 ##### 1.4.2.2 Dołączanie wybranych elementów z tymczasowej tablicy do odpowiednich podfolderów repozytorium.
 (opis)
