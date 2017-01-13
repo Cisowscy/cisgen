@@ -1,8 +1,9 @@
-# cisgen - (Grono-Teka.Cisowscy.com)
 (opis projektu)
 
-## Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria
+# Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria
 ![Tekst alt](ustawienia_serwer-projekt-repozytorium.png "CISGEN: Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria")
+
+**`Ustawienia Podstawowe: Serwery, Projekty, Użytkownicy, Repozytoria:`** znajdują się na 1 pozycji menu
 
 
 ## Welcome to GitHub Pages
