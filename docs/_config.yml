@@ -1,8 +1,9 @@
 theme: jekyll-theme-cayman
 
----
-title: This is my title
-layout: post
----
-
-Here is my page.
+github: [metadata]
+ kramdown:
+   input: GFM
+   hard_wrap: false
+ gems:
+   - jekyll-coffeescript
+   - jekyll-paginate
